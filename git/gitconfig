@@ -1,0 +1,23 @@
+[credential]
+	helper = osxkeychain
+
+[init]
+	defaultBranch = main
+
+[core]
+	editor = nvim
+  pager = delta
+
+[user]
+		email = chunyunma@cmail.carleton.ca
+		name = chunyunma
+
+[delta]
+		side-by-side = true
+    plus-style = "syntax #012800"
+    minus-style = "syntax #340001"
+    syntax-theme = Monokai Extended
+    navigate = true
+
+[interactive]
+    diffFilter = delta --color-only
