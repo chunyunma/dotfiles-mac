@@ -6,18 +6,19 @@
 
 [core]
 	editor = nvim
-  pager = delta
+	pager = delta
+	excludesfile = /Users/chunyun/.config/git/ignore
 
 [user]
-		email = chunyunma@cmail.carleton.ca
-		name = chunyunma
+	email = chunyunma@cmail.carleton.ca
+	name = chunyunma
 
 [delta]
-		side-by-side = true
-    plus-style = "syntax #012800"
-    minus-style = "syntax #340001"
-    syntax-theme = Monokai Extended
-    navigate = true
+	side-by-side = true
+	plus-style = "syntax #012800"
+	minus-style = "syntax #340001"
+	syntax-theme = Monokai Extended
+	navigate = true
 
 [interactive]
     diffFilter = delta --color-only
