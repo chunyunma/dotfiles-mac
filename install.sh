@@ -30,6 +30,8 @@ rm -rf "XDG_CONFIG_HOME/nvim/after"
 ln -sF "$DOTFILES/nvim/after" "$XDG_CONFIG_HOME/nvim"
 rm -rf "XDG_CONFIG_HOME/nvim/tools"
 ln -sF "$DOTFILES/nvim/tools" "$XDG_CONFIG_HOME/nvim"
+rm -rf "$XDG_CONFIG_HOME/nvim/my_snippets"
+ln -sF "$DOTFILES/nvim/my_snippets" "$XDG_CONFIG_HOME/nvim"
 
 #######
 # git #
