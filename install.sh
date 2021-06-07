@@ -57,3 +57,9 @@ ln -sf "$DOTFILES/tmux/tmux.conf" "$XDG_CONFIG_HOME/tmux/tmux.conf"
 
 [ ! -d "$XDG_CONFIG_HOME/nvm" ] \
 && curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+
+#
+# zathura
+#
+mkdir -p "$XDG_CONFIG_HOME/zathura"
+ln -sf "$DOTFILES/zathura/zathurarc" "$XDG_CONFIG_HOME/zathura"
