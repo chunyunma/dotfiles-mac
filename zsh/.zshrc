@@ -1,6 +1,5 @@
-BASE16_SHELL=$HOME/.config/base16-shell/
-[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
-
+# BASE16_SHELL=$HOME/.config/base16-shell/
+# [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
 fpath=($ZDOTDIR/external $fpath)
 
@@ -14,7 +13,7 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 
 autoload -Uz compinit; compinit
 _comp_options+=(globdots) # With hidden files
-source ~/dotfiles/zsh/external/completion.zsh
+source "$ZDOTDIR/external/completion.zsh"
 
 autoload -Uz prompt_purification_setup; prompt_purification_setup
 
@@ -87,14 +86,13 @@ bindkey -r '^l'
 bindkey -r '^g'
 bindkey -s '^g' 'clear\n'
 
-source "$ZDOTDIR/external/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 #*****************************************************************************
 # configure pyenv
 #*****************************************************************************
 
 typeset -U PATH path
-PATH="/Users/chunyun/.pyenv/bin:$PATH"
+PATH="$HOME/.pyenv/bin:$PATH"
 # The next two lines would automatically activate/deactivate \
 # virtualenvs on entering/leaving directories
 eval "$(pyenv init -)"
@@ -139,11 +137,11 @@ export PATH=$PATH:/usr/local/sbin/
 # set up virtualenvwrapper
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Documents/codingIsFun/python
-export VIRTUALENVWRAPPER_PYTHON=/Users/chunyun/.local/pipx/venvs/virtualenvwrapper/bin/python3
+export VIRTUALENVWRAPPER_PYTHON=$HOME/.local/pipx/venvs/virtualenvwrapper/bin/python3
 # Tried the following to replace the previous line, did not succeed
 # export VIRTUALENVWRAPPER_PYTHON=$(pyenv root)/shims/python3
-export VIRTUALENVWRAPPER_VIRTUALENV=/Users/chunyun/.local/pipx/venvs/virtualenvwrapper/bin/virtualenv
-source /Users/chunyun/.local/bin/virtualenvwrapper.sh 
+export VIRTUALENVWRAPPER_VIRTUALENV=$HOME/.local/pipx/venvs/virtualenvwrapper/bin/virtualenv
+source $HOME/.local/bin/virtualenvwrapper.sh
 
 #*****************************************************************************
 # Set R environment
@@ -205,3 +203,4 @@ alias ctags='/usr/local/bin/ctags'
 export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
+source "$ZDOTDIR/external/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
