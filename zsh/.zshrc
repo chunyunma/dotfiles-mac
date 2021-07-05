@@ -92,9 +92,10 @@ bindkey -s '^g' 'clear\n'
 #*****************************************************************************
 
 typeset -U PATH path
-PATH="$HOME/.pyenv/bin:$PATH"
+export PATH="$HOME/.pyenv/bin:$PATH"
 # The next two lines would automatically activate/deactivate \
 # virtualenvs on entering/leaving directories
+eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
