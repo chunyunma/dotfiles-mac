@@ -5,7 +5,7 @@
 	defaultBranch = main
 
 [core]
-	editor = "$HOME/nvim-osx64/bin/nvim"
+	editor = nvim
 	pager = delta
 	excludesfile = /Users/chunyun/.config/git/ignore
 
