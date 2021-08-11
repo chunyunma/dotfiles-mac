@@ -7,3 +7,4 @@ alias d='dirs -v'
 for index ({1..9}) alias "$index"="cd +${index}"; unset index
 
 # alias nvim="$HOME/nvim-osx64/bin/nvim"
+alias t='todo.sh -d $HOME/.todo.cfg'
