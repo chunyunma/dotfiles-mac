@@ -54,12 +54,6 @@ hash -d c=$HOME/Documents/codingIsFun/
 # hash -d b=$HOME/Documents/codingIsFun/datanarrator_sandbox/
 hash -d r=$HOME/Documents/codingIsFun/rrr/
 
-# alias for quick navigation
-alias config='nvim -S ~/.config/nvim/session/config.vim'
-alias zk='nvim -S ~/.config/nvim/session/zk.vim'
-alias teaching='nvim -S ~/.config/nvim/session/teaching.vim'
-alias bmd='nvim -S ~/.config/nvim/session/baby-modern-dive.vim'
-
 # vi mode in zsh
 bindkey -v
 export KEYTIMEOUT=1
@@ -211,3 +205,12 @@ source "$ZDOTDIR/external/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 #
 export PATH=$PATH:"/usr/local/opt/todo-txt/bin/todo.sh"
 
+#
+# nnn file manager
+# 
+# BLK="0B" CHR="0B" DIR="04" EXE="06" REG="00" HARDLINK="06" SYMLINK="06" MISSING="00" ORPHAN="09" FIFO="06" SOCK="0B" OTHER="06"
+# This color is from Dave Snider's video
+BLK="00" CHR="00" DIR="E6" EXE="31" REG="00" HARDLINK="00" SYMLINK="00" MISSING="00" ORPHAN="00" FIFO="00" SOCK="00" OTHER="00"
+export NNN_FCOLORS="$BLK$CHR$DIR$EXE$REG$HARDLINK$SYMLINK$MISSING$ORPHAN$FIFO$SOCK$OTHER"
+# export NNN_PLUG='o:fzopen;c:fcd'
+export NNN_FIFO=/tmp/nnn.fifo
