@@ -3,6 +3,13 @@
 # alias gc='git commit'
 # alias gp='git push'
 
+# alias for quick navigation
+alias config='nvim -S ~/.config/nvim/session/config.vim'
+alias zk='nvim -S ~/.config/nvim/session/zk.vim'
+# alias teaching='nvim -S ~/.config/nvim/session/teaching.vim'
+# alias bmd='nvim -S ~/.config/nvim/session/baby-modern-dive.vim'
+
+
 alias d='dirs -v'
 for index ({1..9}) alias "$index"="cd +${index}"; unset index
 
