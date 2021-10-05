@@ -141,13 +141,10 @@ source $HOME/.local/bin/virtualenvwrapper.sh
 #*****************************************************************************
 # Set R environment
 #*****************************************************************************
-# prefer the alias method over the PATH method
 export PATH="$PATH:/Library/Frameworks/R.framework/Resources"
-alias R '/Library/Frameworks/R.framework/Versions/Current/Resources/bin/R --no-save --no-restore-data'
-# alias R='R --no-save --no-restore-data'
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-# echo 'Sys.setlocale(category="LC_ALL", locale = "en_US.UTF-8")'
+export R_PROFILE=$XDG_CONFIG_HOME/R/Rprofile.site
 
 #*****************************************************************************
 # set Go env
