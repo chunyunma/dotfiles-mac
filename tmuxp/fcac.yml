@@ -1,0 +1,15 @@
+session_name: fcac
+
+windows:
+  - window_name: fcac
+    start_directory: ~/Documents/codingIsFun/rrr/fcac
+    layout: tiled
+    panes:
+      - focus: true
+      -
+  - window_name: cheat sheet
+    start_directory: ~/Documents/codingIsFun/rrr/myrbook
+    layout: tiled
+    panes:
+      -
+

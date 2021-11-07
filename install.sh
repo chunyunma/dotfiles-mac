@@ -51,6 +51,13 @@ ln -sf "$DOTFILES/tmux/tmux.conf" "$XDG_CONFIG_HOME/tmux/tmux.conf"
 && git clone https://github.com/tmux-plugins/tpm \
 "$XDG_CONFIG_HOME/tmux/plugins/tpm"
 
+#
+# tmuxp
+#
+
+rm -rf "$XDG_CONFIG_HOME/tmuxp"
+ln -sF "$DOTFILES/tmuxp" "$XDG_CONFIG_HOME"
+
 #######
 # npm #
 #######

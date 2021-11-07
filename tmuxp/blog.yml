@@ -1,0 +1,20 @@
+session_name: blog
+
+windows:
+  - window_name: blog
+    start_directory: ~/Documents/codingIsFun/playgroud
+    layout: tiled
+    panes:
+      - focus: true
+      -
+  - window_name: svd
+    start_directory: ~/Documents/codingIsFun/rrr/matrix_algebra/singular_value_decomposition
+    panes:
+      -
+  - window_name: hugo
+    start_directory: ~/Documents/codingIsFun/playgroud
+    layout: tiled
+    panes:
+      -
+      -
+

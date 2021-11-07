@@ -1,0 +1,22 @@
+session_name: book
+
+windows:
+  - window_name: micro
+    start_directory: ~/Documents/codingIsFun/rrr/micro
+    layout: tiled
+    panes:
+      - focus: true
+      -
+  - window_name: onion
+    start_directory: ~/Documents/codingIsFun/rrr/onion
+    layout: tiled
+    panes:
+      -
+      -
+  - window_name: cheat sheet
+    start_directory: ~/Documents/codingIsFun/rrr/myrbook
+    layout: tiled
+    panes:
+      -
+
+

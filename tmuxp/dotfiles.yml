@@ -1,0 +1,14 @@
+session_name: dotfiles
+start_directory: $HOME/dotfiles
+
+windows:
+  - window_name: dotfiles
+    layout: tiled
+    panes:
+      - shell_command: config
+  - window_name: terms
+    layout: tiled
+    panes:
+      -
+      -
+
