@@ -51,6 +51,7 @@ setopt INTERACTIVE_COMMENTS
 
 # alias with hash table for quick navigation
 hash -d c=$HOME/Documents/codingIsFun/
+# then I can use cd ~c
 # hash -d b=$HOME/Documents/codingIsFun/datanarrator_sandbox/
 hash -d r=$HOME/Documents/codingIsFun/rrr/
 
